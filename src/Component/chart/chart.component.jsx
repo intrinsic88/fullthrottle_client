@@ -7,8 +7,8 @@ const GraphComponent = (props) => {
         <XYPlot margin={{bottom: 70}} xType="linear" xDomain={[1, 24]} width={500} height={500}>
         <VerticalGridLines />
         <HorizontalGridLines />
-        <XAxis title='Time in Day'/>
-        <YAxis title='Hours (30Mins is 0.5 hours)'/>
+        <XAxis title='Session Start time'/>
+        <YAxis title='Hours Active(30Mins is 0.5 hours)'/>
         <VerticalBarSeries
           data={props.data}
         />

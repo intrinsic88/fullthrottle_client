@@ -124,6 +124,8 @@ const UserTable = () => {
 
     const handleClose = () => {
         setOpen(false);
+        setSeletectedDate(moment().format('YYYY/MM/DD'))
+        setUserData(graphData);
     };
 
     useEffect(() => {
@@ -135,7 +137,6 @@ const UserTable = () => {
 
     useEffect(() => {
         checkforSelectData()
-        console.log("inside")
     }, [selectedDate])
 
     return (

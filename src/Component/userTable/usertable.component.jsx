@@ -83,7 +83,7 @@ const UserTable = () => {
     const checkforSelectData = () => {
         let valset = false; 
         allData.map((element) => {
-            const start_date = moment(element.start_date).utc().format('YYYY-MM-DD');
+            const start_date = moment.utc(element.start_date).format('YYYY-MM-DD');
             if (selectedDate == start_date){
                 setUserData(element);
                 valset = true;

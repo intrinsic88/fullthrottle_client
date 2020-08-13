@@ -113,8 +113,9 @@ const UserTable = () => {
     }
 
     const rowclickHandler = (id) => {
-        getUserData(id)
-        handleOpen()
+        getUserData(id);
+        handleOpen();
+        setUserData(graphData);
     }
 
     const handleOpen = () => {

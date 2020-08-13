@@ -162,8 +162,8 @@ const UserTable = () => {
                                 <TableBody>
                                     {
                                         rows.map((row) => (
-                                            <TableRow key={row.id}>
-                                                <TableCell component='td' scopr='row' onClick={() => rowclickHandler(row.id)}>
+                                            <TableRow key={row.id} onClick={() => rowclickHandler(row.id)}>
+                                                <TableCell component='td' scopr='row'>
                                                     {row.name}
                                                 </TableCell>
                                                 <TableCell component='td' scopr='row'>

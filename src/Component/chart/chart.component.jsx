@@ -1,10 +1,15 @@
 import React from 'react';
 import { XYPlot, XAxis, YAxis, VerticalGridLines, HorizontalGridLines, VerticalBarSeries } from 'react-vis';
+import {isMobile} from 'react-device-detect';
 
 const GraphComponent = (props) => {
 
+  const width = isMobile? '305':'500';
+  const height = isMobile? '500':'500'
+
     return(
-        <XYPlot margin={{bottom: 70}} xType="linear" xDomain={[1, 24]} width={500} height={500}>
+      <div style={{width:'100%'}}>
+        <XYPlot margin={{bottom: 70}} xType="linear" xDomain={[1, 24]} width={width} height={height}>
         <VerticalGridLines />
         <HorizontalGridLines />
         <XAxis title='Session Start time'/>
@@ -13,6 +18,7 @@ const GraphComponent = (props) => {
           data={props.data}
         />
         </XYPlot>
+      </div>
     )
 
 }

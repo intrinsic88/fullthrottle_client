@@ -4,11 +4,11 @@ import {isMobile} from 'react-device-detect';
 
 const GraphComponent = (props) => {
 
-  const width = isMobile? '305':'500';
+  const width = isMobile? window.innerWidth-(20*window.innerWidth/100) :'500';
   const height = isMobile? '500':'500'
 
     return(
-      <div style={{width:'100%'}}>
+      <div> 
         <XYPlot margin={{bottom: 70}} xType="linear" xDomain={[1, 24]} width={width} height={height}>
         <VerticalGridLines />
         <HorizontalGridLines />

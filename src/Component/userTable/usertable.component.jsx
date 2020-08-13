@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Container, TableHead, Table, TableRow, TableBody, TableCell, Modal, Fade, Backdrop, TextField, Grid, Card, CardHeader, CardContent, Typography } from '@material-ui/core';
-import MaterialTable from 'material-table';
+import { Container, TableHead, Table, TableRow, TableBody, TableCell, Modal, Fade, Backdrop, TextField, Grid, Card, CardContent, Typography } from '@material-ui/core';
 import Axios from 'axios';
 import GraphComponent from '../chart/chart.component';
 import moment from 'moment';

@@ -23,7 +23,7 @@ const Navbar = () =>{
       <MenuIcon  />
     </IconButton>
     <Typography variant="h6" className={classes.title}>
-      Zoho Customer
+     FT Assignment
     </Typography>
   </Toolbar>
 </AppBar>

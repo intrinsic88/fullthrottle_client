@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import UserTable from './Component/userTable/usertable.component';
 import { Container } from '@material-ui/core';
